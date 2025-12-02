@@ -81,3 +81,79 @@ h1::after {
     color: red;
     font-weight: bold;
 }
+
+/* -------------------------------------- */
+/* 🔥 Added DL, DT, DD CSS (NEW CODE)     */
+/* -------------------------------------- */
+
+.info-list {
+    border: 1px solid red;
+    padding: 10px;
+    width: 300px;
+    background-color: #fff5f5;
+}
+
+/* Term */
+.info-list dt {
+    font-weight: bold;
+    color: blue;
+}
+
+/* Pseudo-class */
+.info-list dt:hover {
+    color: darkblue;
+}
+
+/* Description */
+.info-list dd {
+    margin-left: 20px;
+    color: green;
+}
+
+/* Pseudo-element */
+.info-list dd::before {
+    content: "➡ ";
+    color: red;
+}
+
+/* -------------------------------------------------- */
+/* 🔥 POSITION PROPERTIES ADDED (New Section Below)   */
+/* -------------------------------------------------- */
+
+/* 1. Relative Position */
+.relative-box {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border: 2px dashed purple;
+}
+
+/* 2. Absolute Position */
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+/* 3. Fixed Position (always visible even on scroll) */
+.fixed-box {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 4. Sticky Position */
+.sticky-title {
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 5px;
+    border-bottom: 2px solid orange;
+}

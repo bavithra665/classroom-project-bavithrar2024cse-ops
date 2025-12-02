@@ -10,21 +10,73 @@ h1 {
     border: 1px solid red;
 }
 
+/* Pseudo-class on tag selector */
+h1:hover {
+    color: blue;
+    background-color: lightyellow;
+}
+
+/* Pseudo-element on tag selector */
+h1::after {
+    content: " ✨";
+    color: orange;
+}
+
 /* 3. ID Selector */
 #main-box {
-    border: 1px solid red;
+    border: 1px solid rgb(212, 255, 0);
     padding: 10px;
     color: red;
+}
+
+/* Pseudo-class on ID selector */
+#main-box:hover {
+    background-color: lightgreen;
+}
+
+/* Pseudo-element on ID selector */
+#main-box::before {
+    content: "👉 ";
+    font-weight: bold;
+    color: rgb(0, 128, 0);
 }
 
 /* 4. Class Selector */
 .highlight {
     background-color: pink;
-    border: 1px solid red;
+    border: 1px solid rgb(0, 255, 34);
     color: red;
 }
+
+/* Pseudo-class on class selector */
+.highlight:hover {
+    background-color: rgb(255, 210, 210);
+}
+
+/* Pseudo-element */
+.highlight::after {
+    content: " (Important)";
+    color: purple;
+    font-weight: bold;
+}
+
+/* 5. Class Selector for second item */
 .second-item {
-    color: red;
+    color: rgb(0, 208, 255);
     font-weight: bold;
     background-color: yellow;
+    border: 1px solid red;
+}
+
+/* Pseudo-class */
+.second-item:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* Pseudo-element */
+.second-item::before {
+    content: "⭐ ";
+    color: red;
+    font-weight: bold;
 }

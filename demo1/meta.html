@@ -13,6 +13,16 @@
     <meta http-equiv="refresh" content="10; url=https://google.com">
 
     <title>Semantic HTML Demo</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse; /* clean border */
+        }
+        th, td {
+            padding: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,6 +64,36 @@
             <label>Email:</label>
             <input type="email"><br><br>
         </fieldset>
+
+        <br><br>
+
+        <!-- Table with thead, tr, td, border -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Sample User</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>user@example.com</td>
+                </tr>
+
+                <tr>
+                    <td>Location</td>
+                    <td>India</td>
+                </tr>
+            </tbody>
+        </table>
+
     </main>
 
     <footer>

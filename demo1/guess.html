@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #222;
+            color: #eee;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #ddd;
+            padding: 8px 16px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        .block {
+            width: 100%;
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .line {
+            width: 100%;
+            height: 3px;
+            background: #eee;
+            position: absolute;
+            top: 45px;
+        }
+
+        .box {
+            width: 90px;
+            height: 90px;
+            background: #eee;
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            margin-top: 40px;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            width: 140px;
+            height: 60px;
+            font-size: 28px;
+            text-align: center;
+            background: #222;
+            border: 3px solid #eee;
+            color: #eee;
+        }
+
+        .right {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="top">
+        <button class="btn">Again!</button>
+        <div>(Between 1 and 20)</div>
+    </div>
+
+    <h1>Guess My Number!</h1>
+
+    <div class="block">
+        <div class="line"></div>
+        <div class="box">?</div>
+
+        <div class="bottom">
+            <div class="left">
+                <input type="number">
+                <button class="btn">Check!</button>
+            </div>
+
+            <div class="right">
+                Start guessing... <br><br>
+                Score: 20 <br>
+                Highscore: 0
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // We need all the instance
+        // Generate a random number from 1 and 20
+        // Button functionalites
+        // Check button func
+        // 3.1Input value is equal to random number then change the background to green 
+        //3.2 And instead of ? put the random value
+        //3.3 At highscore update the highscore
+        //3.4 Show message " Correct value"
+
+        //4.1 if input is greater than random number
+        //4.2 decrease score by 1
+        // show message"too high"
+        // 4.3 if input is lesser than the random number
+        // 4.4 Decrease score by 1
+        // show message "too low"
+
+        // 1 We need all the instance
+        let againBtn = document.querySelector(".again");
+        let number = document.querySelector(".number");
+        let guess = document.querySelector(".guess");
+        let checkBtn = document.querySelector(".check");
+        let score = document.querySelector(".score");
+        let highScore = document.querySelector(".highscore");
+        let msg = document.querySelector(".message");
+
+        // 2. Generate a Rnadom Number betwenn 1 and 20
+        let randomNumber = Math.trunc(Math.random() * 20) + 1;
+
+        // 2.1 creat a varible of score
+        let scr = 20;
+
+        // Button Functionalities
+        // 1.event  that we want to occur 2. Callback
+        checkBtn.addEventListener("click", () => {
+        console.log("Button Clicked", randomNumber);
+        console.log(randomNumber);
+
+    });
+
+    </script>
+
+
+</body>
+</html>

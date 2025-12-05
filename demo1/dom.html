@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+
+    <style>
+      .border {
+        border: 2px solid red;
+      }
+      .color {
+        color: red;
+      }
+      .background {
+        background-color: yellow;
+      } 
+      
+    </style>
+  </head>
+  <body>
+    <h1 class="border">Dom Manipulation</h1>
+    <h1 class="a">Hello world</h1>
+
+    <p class="a">Hello From Para</p>
+
+    <span id="b">Span</span>
+
+    <p id="c">Para</p>
+
+    <div></div>
+
+    <script>
+      // READ & WRITE OPERATION
+      let head = document.querySelector("p");
+
+      console.log(head.textContent); // read
+      head.textContent = "Hii Everyone"; // write
+
+      let div = document.querySelector("div");
+      div.textContent = "<p>Hello from para</p>"; // prints with tags
+      div.innerHTML = "<p>Hello from para</p>"; // renders the tag
+
+      console.log(div.textContent);
+      console.log(div.innerHTML);
+
+      // ADD / REMOVE / TOGGLE
+      let head1 = document.querySelector("h1");
+      head1.classList.add("color");
+      head1.classList.remove("border");
+      head1.classList.toggle("background");
+
+      // INLINE STYLING
+      let p = document.querySelector("p");
+      p.style.color = "red";
+      p.style.backgroundColor = "green";
+
+      // CREATE ELEMENTS (ul -> li)
+      let ul = document.createElement("ul");
+
+      let li = document.createElement("li");
+      li.textContent = "Item 1";
+
+      let li1 = document.createElement("li");
+      li1.textContent = "Item 2";
+
+      ul.appendChild(li);
+      ul.appendChild(li1);
+
+      document.body.appendChild(ul);
+
+      // Add array items dynamically
+      let arr = ["Apple", "Banana", "Mango"];
+
+      arr.forEach((element) => {
+        let lo = document.createElement("li");
+        lo.textContent = element;
+        ul.appendChild(lo);
+      });
+    </script>
+  </body>
+</html>

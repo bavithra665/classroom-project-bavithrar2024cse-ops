@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta information -->
+    <meta name="description" content="This is a semantic HTML page for learning.">
+    <meta name="keywords" content="HTML, Semantic, Meta Tags, Example">
+    <meta name="author" content="Your Name">
+
+    <!-- Auto refresh + redirect after 10 seconds -->
+    <meta http-equiv="refresh" content="60; url=https://google.com">
+
+    <title>Semantic HTML Demo</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse; /* clean border */
+        }
+        th, td {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Semantic HTML</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <!-- Open in new tab -->
+            <li><a href="#" target="_blank">Home (New Tab)</a></li>
+
+            <!-- Open in parent frame -->
+            <li><a href="https://example.com" target="_parent">About (Parent redirect to new tab)</a></li>
+
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About This Page</h2>
+            <p>This page demonstrates semantic HTML and meta tags.</p>
+        </section>
+
+        <article>
+            <h2>Important Notice</h2>
+            <p>This page will refresh and redirect automatically after 10 seconds.</p>
+        </article>
+
+        <!-- Fieldset + Legend -->
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label>Name:</label>
+            <input type="text"><br><br>
+
+            <label>Email:</label>
+            <input type="email"><br><br>
+
+            <label>Contact:</label>
+            <input type="text"><br><br>
+        </fieldset>
+
+        <br><br>
+
+        <!-- Table with Name, Email, Contact columns -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Bavi</td>
+                    <td>bavi26@gmail.com</td>
+                    <td>1234567890</td>
+                </tr>
+
+                <tr>
+                    <td>Ram</td>
+                    <td>ram23@gmail.com</td>
+                    <td>9876543210</td>
+                </tr>
+
+                <tr>
+                    <td>Mara</td>
+                    <td>mara34@gmail.com</td>
+                    <td>5555555555</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

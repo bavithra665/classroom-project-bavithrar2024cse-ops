@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading one</h1>
+    <h1 class="c1">Heading inside one</h1>
+    <p class="c1">This is a para with class c1</p>
+    <div class="c1">Div class c1</div>
+    <div id="id1">This is the element id id=id1</div>
+
+    <script>
+        // 1. Get elements by TAG NAME (correct tag: h1)
+        let head1 = document.getElementsByTagName("h1");
+        console.log("This is the tag name:", head1);
+
+        // 2. Get elements by CLASS NAME
+        let class1 = document.getElementsByClassName("c1");
+        console.log("This is the class name:", class1);
+
+        // 3. Get element by ID
+        let id1 = document.getElementById("id1");
+        console.log("This is the id:", id1);
+
+        // 4. querySelector (returns FIRST match)
+        let scl = document.querySelector(".c1");
+        console.log("querySelector:", scl);
+
+        // 5. querySelectorAll (returns ALL matches)
+        let d = document.querySelectorAll(".c1");
+        console.log("querySelectorAll:", d);
+
+        // Changing content
+        let head = document.querySelector(".c1");
+        console.log(head.textContent);
+
+        head.textContent = "This is the new programming content";
+
+        let div = document.querySelector("div");
+        div.innerHTML = "Hello from HTML";
+    </script>
+</body>
+</html>

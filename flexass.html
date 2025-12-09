@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .a {
+            display: flex;
+            border: 2px solid black;
+            justify-content: flex-start;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px;
+        }
+        .item {
+            background-color:lightskyblue;
+            border: 2px solid black;
+            font-size: 20px;
+            color: black;
+            width: 80px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b {
+            display: flex;
+            border: 2px solid black;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+        .item1 {
+            background-color: lightskyblue;
+            border: 2px solid black;
+            font-size: 20px;
+            color: black;
+            width:1500px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c {
+            display: flex;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px;
+        }
+        .item2 {
+            background-color: lightskyblue;
+            border: 2px solid black;
+            font-size: 20px;
+            color: black;
+            width:70px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .d {
+            display: flex;
+            border: 2px solid black;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px;
+        }
+        .item3 {
+            background-color: lightskyblue;
+            border: 2px solid black;
+            font-size: 20px;
+            color: black;
+            width:70px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .e {
+            display: flex;
+            border: 2px solid black;
+            justify-content:flex-start;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px;
+        }
+        .item4 {
+            background-color: lightskyblue;
+            border: 2px solid black;
+            font-size: 20px;
+            color: black;
+            width:70px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item5 {
+            background-color: lightskyblue;
+            border: 2px solid black;
+            font-size: 20px;
+            color: black;
+            width:70px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .f {
+            display: flex;
+            border: 2px solid black;
+            justify-content:flex-start;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px;
+        }
+        .item6 {
+            background-color: lightskyblue;
+            border: 2px solid black;
+            font-size: 20px;
+            color: black;
+            width:200px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .g {
+            display: flex;
+            border: 2px solid black;
+            justify-content:flex-start;
+            align-items: center;
+            flex-direction: row;
+            gap: 30px;
+            padding: 10px;
+        }
+        .item7 {
+            background-color: lightskyblue;
+            border: 2px solid black;
+            font-size: 20px;
+            color: black;
+            width:50px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .h {
+            display: flex;
+            border: 2px solid black;
+            justify-content:flex-start;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px;
+        }
+        .item8 {
+            background-color: lightskyblue;
+            border: 2px solid black;
+            font-size: 20px;
+            color: black;
+            width:750px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">ALL FLEX BOX CONCEPTS</h1>
+    <h3>1.Display Flex</h3>
+    <p>This is the flexbox example showing items in a row.</p>
+    <div class="a">
+        <div class="item">flex1</div>
+        <div class="item">flex2</div>
+        <div class="item">flex3</div>
+    </div>
+
+    <h3>2.Flex Direction</h3>
+    <p>This is the flexbox example showing items in a column.</p>
+    <div class="b">
+        <div class="item1">flex1</div>
+        <div class="item1">flex2</div>
+        <div class="item1">flex3</div>
+    </div>
+
+    <h3>3.Justify Content</h3>
+    <p>This is the flexbox example showing items in a juftify content.</p>
+    <div class="c">
+        <div class="item2">flex1</div>
+        <div class="item2">flex2</div>
+    </div>
+    <h4></h4>
+    <div class="d">
+        <div class="item3">flex1</div>
+        <div class="item3">flex2</div>
+    </div>
+
+    <h3>4.Align Items</h3>
+    <p>This is the flexbox example showing items in align items.</p>
+    <div class="e">
+        <div class="item4">flex1</div>
+        <div class="item5">flex2</div>
+        <div class="item4">flex3</div>
+    </div>
+    <h3>5.Flex Wrap</h3>
+    <p>This is the flexbox example showing items in wrap.</p>
+    <div class="f">
+        <div class="item6">flex1</div>
+        <div class="item6">flex2</div>
+        <div class="item6">flex3</div>
+        <div class="item6">flex4</div>
+    </div>
+    <h3>6.Gap</h3>
+    <p>This is the flexbox example showing items in gap.</p>
+    <div class="g">
+        <div class="item7">A</div>
+        <div class="item7">B</div>
+        <div class="item7">C</div>
+    </div>
+    <h3>7. Grow</h3>
+    <p>Define how much a flex item will grow.</p>
+    <div class="h">
+        <div class="item8">Grow</div>
+        <div class="item8">Grow</div>
+    </div>
+</body>
+</html>

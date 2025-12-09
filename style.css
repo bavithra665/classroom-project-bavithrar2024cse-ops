@@ -1,0 +1,155 @@
+/* 0. Box Border Model */
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box; /* borderbox applied */
+}
+
+/* 2. Tag Selector */
+h1 {
+    color: red;
+    border: 1px solid red;
+}
+
+/* Pseudo-class on tag selector */
+h1:hover {
+    color: blue;
+    background-color: lightyellow;
+}
+
+/* Pseudo-element on tag selector */
+h1::after {
+    content: " ✨";
+    color: orange;
+}
+
+/* 3. ID Selector */
+#main-box {
+    border: 1px solid rgb(212, 255, 0);
+    padding: 10px;
+    color: red;
+}
+
+/* Pseudo-class on ID selector */
+#main-box:hover {
+    background-color: lightgreen;
+}
+
+/* Pseudo-element on ID selector */
+#main-box::before {
+    content: "👉 ";
+    font-weight: bold;
+    color: rgb(0, 128, 0);
+}
+
+/* 4. Class Selector */
+.highlight {
+    background-color: pink;
+    border: 1px solid rgb(0, 255, 34);
+    color: red;
+}
+
+/* Pseudo-class on class selector */
+.highlight:hover {
+    background-color: rgb(255, 210, 210);
+}
+
+/* Pseudo-element */
+.highlight::after {
+    content: " (Important)";
+    color: purple;
+    font-weight: bold;
+}
+
+/* 5. Class Selector for second item */
+.second-item {
+    color: rgb(0, 208, 255);
+    font-weight: bold;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+/* Pseudo-class */
+.second-item:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* Pseudo-element */
+.second-item::before {
+    content: "⭐ ";
+    color: red;
+    font-weight: bold;
+}
+
+.info-list {
+    border: 1px solid red;
+    padding: 10px;
+    width: 300px;
+    background-color: #fff5f5;
+}
+
+/* Term */
+.info-list dt {
+    font-weight: bold;
+    color: blue;
+}
+
+/* Pseudo-class */
+.info-list dt:hover {
+    color: darkblue;
+}
+
+/* Description */
+.info-list dd {
+    margin-left: 20px;
+    color: green;
+}
+
+/* Pseudo-element */
+.info-list dd::before {
+    content: "➡ ";
+    color: red;
+}
+
+/* -------------------------------------------------- */
+/* 🔥 POSITION PROPERTIES ADDED (New Section Below)   */
+/* -------------------------------------------------- */
+
+/* 1. Relative Position */
+.relative-box {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border: 2px dashed purple;
+}
+
+/* 2. Absolute Position */
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+/* 3. Fixed Position (always visible even on scroll) */
+.fixed-box {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 4. Sticky Position */
+.sticky-title {
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 5px;
+    border-bottom: 2px solid orange;
+}
